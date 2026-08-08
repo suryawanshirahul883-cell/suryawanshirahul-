@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gautam Buddha</title>
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<style>
+    /* =====================================
+   BASIC SETTINGS
+===================================== */
+
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+    }
+
+
+    body {
+
+        font-family:
+
+            "Poppins",
+
+            sans-serif;
+
+        background:
+
+            #020817;
+
+    }
+
+
+    /* =====================================
+   GAUTAM BUDDHA SECTION
+===================================== */
+
+    .buddha-section {
+
+        position: relative;
+
+        min-height: 650px;
+
+        display: flex;
+
+        align-items: center;
+
+        padding:
+
+            5% 330px 9% 3%;
+
+        overflow: hidden;
+
+        background:
+
+            linear-gradient(90deg,
+
+                rgba(4, 12, 20, 0.97),
+
+                rgba(10, 25, 35, 0.78),
+
+                rgba(4, 12, 20, 0.35)),
+
+            url("https://i.pinimg.com/1200x/2d/f3/f2/2df3f296dbc94e8f78f6581bd5165284.jpg"
+
+            );
+
+        background-size:
+
+            cover;
+
+        background-position:
+
+            center;
+
+        background-repeat:
+
+            no-repeat;
+
+        background-attachment:
+
+            scroll;
+
+    }
+
+
+    /* =====================================
+   CONTENT
+===================================== */
+
+    .buddha-content {
+
+        position: relative;
+
+        z-index: 2;
+
+        max-width:
+
+            750px;
+
+        animation:
+
+            buddhaReveal 1.2s ease forwards;
+
+    }
+
+
+    /* =====================================
+   SMALL TAG
+===================================== */
+
+    .buddha-tag {
+
+        display:
+
+            inline-block;
+
+        padding:
+
+            10px 20px;
+
+        margin-bottom:
+
+            20px;
+
+        border:
+
+            1px solid rgba(255,
+
+                196,
+
+                0,
+
+                0.75);
+
+        border-radius:
+
+            50px;
+
+        color:
+
+            #ffd54f;
+
+        background:
+
+            rgba(255,
+
+                196,
+
+                0,
+
+                0.10);
+
+        font-size:
+
+            14px;
+
+        font-weight:
+
+            700;
+
+        letter-spacing:
+
+            2px;
+
+        box-shadow:
+
+            0 0 25px rgba(255,
+
+                196,
+
+                0,
+
+                0.18);
+
+    }
+
+
+    /* =====================================
+   MAIN TITLE
+===================================== */
+
+    .buddha-content h1 {
+
+        margin:
+
+            0;
+
+        font-family:
+
+            "Orbitron",
+
+            sans-serif;
+
+        font-size:
+
+            clamp(42px,
+
+                7vw,
+
+                88px);
+
+        line-height:
+
+            1.1;
+
+        letter-spacing:
+
+            3px;
+
+        color:
+
+            white;
+
+        text-shadow:
+
+            0 0 30px rgba(255,
+
+                196,
+
+                0,
+
+                0.35);
+
+    }
+
+
+    /* =====================================
+   BUDDHA TEXT
+===================================== */
+
+    .buddha-content h1 span {
+
+        display:
+
+            block;
+
+        margin-top:
+
+            10px;
+
+        background:
+
+            linear-gradient(90deg,
+
+                #ffd54f,
+
+                #ffffff,
+
+                #ff9800,
+
+                #ffd54f);
+
+        background-size:
+
+            300% auto;
+
+        -webkit-background-clip:
+
+            text;
+
+        background-clip:
+
+            text;
+
+        -webkit-text-fill-color:
+
+            transparent;
+
+        animation:
+
+            buddhaGradient 5s linear infinite;
+
+    }
+
+
+    /* =====================================
+   LIFE PERIOD
+===================================== */
+
+    .buddha-year {
+
+        margin:
+
+            20px 0;
+
+        color:
+
+            #ffd54f;
+
+        font-size:
+
+            21px;
+
+        font-weight:
+
+            700;
+
+        letter-spacing:
+
+            2px;
+
+    }
+
+
+    /* =====================================
+   DESCRIPTION
+===================================== */
+
+    .buddha-description {
+
+        max-width:
+
+            650px;
+
+        color:
+
+            rgba(255,
+
+                255,
+
+                255,
+
+                0.90);
+
+        font-size:
+
+            18px;
+
+        line-height:
+
+            1.8;
+
+    }
+
+
+    /* =====================================
+   BUTTONS
+===================================== */
+
+    .buddha-buttons {
+
+        display:
+
+            flex;
+
+        flex-wrap:
+
+            wrap;
+
+        gap:
+
+            15px;
+
+        margin-top:
+
+            35px;
+
+    }
+
+
+    .buddha-btn {
+
+        padding:
+
+            15px 28px;
+
+        border:
+
+            2px solid #ffd54f;
+
+        border-radius:
+
+            50px;
+
+        color:
+
+            #251700;
+
+        background:
+
+            #ffd54f;
+
+        text-decoration:
+
+            none;
+
+        font-weight:
+
+            800;
+
+        transition:
+
+            0.35s;
+
+        box-shadow:
+
+            0 0 25px rgba(255,
+
+                196,
+
+                0,
+
+                0.30);
+
+    }
+
+
+    /* =====================================
+   BUTTON HOVER
+===================================== */
+
+    .buddha-btn:hover {
+
+        transform:
+
+            translateY(-5px);
+
+        color:
+
+            white;
+
+        background:
+
+            transparent;
+
+        box-shadow:
+
+            0 0 35px rgba(255,
+
+                196,
+
+                0,
+
+                0.75);
+
+    }
+
+
+    /* =====================================
+   SECOND BUTTON
+===================================== */
+
+    .buddha-btn-outline {
+
+        color:
+
+            white;
+
+        background:
+
+            rgba(255,
+
+                255,
+
+                255,
+
+                0.08);
+
+        border-color:
+
+            rgba(255,
+
+                255,
+
+                255,
+
+                0.65);
+
+    }
+
+
+    .buddha-btn-outline:hover {
+
+        color:
+
+            #251700;
+
+        background:
+
+            #ffd54f;
+
+        border-color:
+
+            #ffd54f;
+
+    }
+
+
+   /* =====================================
+   PREMIUM BUDDHA PHOTO SCROLL
+===================================== */
+
+.buddha-photo-scroll {
+
+    position: absolute;
+
+    right: 45px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 310px;
+
+    height: 590px;
+
+    overflow: hidden;
+
+    z-index: 5;
+
+    padding: 18px;
+
+    border-radius: 32px;
+
+    /* Premium glass background */
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255, 213, 79, 0.18),
+
+            rgba(8, 15, 25, 0.90),
+
+            rgba(0, 0, 0, 0.80)
+
+        );
+
+    /* Gold border */
+
+    border:
+
+        1px solid rgba(
+            255,
+            213,
+            79,
+            0.55
+        );
+
+    /* Glass blur */
+
+    backdrop-filter:
+
+        blur(15px);
+
+    -webkit-backdrop-filter:
+
+        blur(15px);
+
+    /* Premium shadow */
+
+    box-shadow:
+
+        0 0 25px rgba(
+            255,
+            196,
+            0,
+            0.20
+        ),
+
+        inset 0 0 25px rgba(
+            255,
+            213,
+            79,
+            0.08
+        );
+
+    transition:
+
+        0.5s;
+
+}
+
+
+/* =====================================
+   GOLD GLOW ON HOVER
+===================================== */
+
+.buddha-photo-scroll:hover {
+
+    transform:
+
+        translateY(-50%)
+        translateX(-8px);
+
+    border-color:
+
+        #ffd54f;
+
+    box-shadow:
+
+        0 0 20px rgba(
+            255,
+            196,
+            0,
+            0.40
+        ),
+
+        0 0 55px rgba(
+            255,
+            196,
+            0,
+            0.25
+        ),
+
+        inset 0 0 30px rgba(
+            255,
+            213,
+            79,
+            0.12
+        );
+
+}
+
+
+/* =====================================
+   PHOTO TRACK
+===================================== */
+
+.photo-track {
+
+    display:
+
+        flex;
+
+    flex-direction:
+
+        column;
+
+    gap:
+
+        22px;
+
+    animation:
+
+        buddhaPhotoScroll 22s linear infinite;
+
+}
+
+
+/* =====================================
+   PHOTO CARD
+===================================== */
+
+.photo-track img {
+
+    display:
+
+        block;
+
+    width:
+
+        100%;
+
+    height:
+
+        245px;
+
+    object-fit:
+
+        cover;
+
+    border-radius:
+
+        22px;
+
+    /* Smooth photo effect */
+
+    filter:
+
+        brightness(0.88)
+        contrast(1.08)
+        saturate(1.10);
+
+    border:
+
+        1px solid rgba(
+            255,
+            255,
+            255,
+            0.18
+        );
+
+    box-shadow:
+
+        0 10px 30px rgba(
+            0,
+            0,
+            0,
+            0.55
+        );
+
+    transition:
+
+        transform 0.45s ease,
+
+        filter 0.45s ease,
+
+        box-shadow 0.45s ease,
+
+        border-color 0.45s ease;
+
+}
+
+
+/* =====================================
+   PHOTO HOVER EFFECT
+===================================== */
+
+.photo-track img:hover {
+
+    transform:
+
+        scale(1.035);
+
+    filter:
+
+        brightness(1.10)
+        contrast(1.08)
+        saturate(1.15);
+
+    border-color:
+
+        rgba(
+            255,
+            213,
+            79,
+            0.90
+        );
+
+    box-shadow:
+
+        0 0 18px rgba(
+            255,
+            196,
+            0,
+            0.40
+        ),
+
+        0 15px 40px rgba(
+            0,
+            0,
+            0,
+            0.70
+        );
+
+}
+
+
+/* =====================================
+   PAUSE SCROLL ON HOVER
+===================================== */
+
+.buddha-photo-scroll:hover
+.photo-track {
+
+    animation-play-state:
+
+        paused;
+
+}
+
+
+/* =====================================
+   TOP AND BOTTOM FADE
+===================================== */
+
+.buddha-photo-scroll::before,
+
+.buddha-photo-scroll::after {
+
+    content:
+
+        "";
+
+    position:
+
+        absolute;
+
+    left:
+
+        0;
+
+    width:
+
+        100%;
+
+    height:
+
+        80px;
+
+    z-index:
+
+        4;
+
+    pointer-events:
+
+        none;
+
+}
+
+
+/* TOP FADE */
+
+.buddha-photo-scroll::before {
+
+    top:
+
+        0;
+
+    background:
+
+        linear-gradient(
+
+            to bottom,
+
+            rgba(4, 12, 20, 0.98),
+
+            transparent
+
+        );
+
+}
+
+
+/* BOTTOM FADE */
+
+.buddha-photo-scroll::after {
+
+    background: url("https://i.pinimg.com/1200x/94/2f/cb/942fcb3edb34bce390710a00f497e447.jpg");
+
+    bottom:
+
+        0;
+
+    background:
+
+        linear-gradient(
+
+            to top,
+
+            rgba(4, 12, 20, 0.98),
+
+            transparent
+
+        );
+
+}
+  /* =====================================
+   AUTO PHOTO SCROLL
+===================================== */
+
+@keyframes buddhaPhotoScroll {
+
+    from {
+
+        transform:
+
+            translateY(0);
+
+    }
+
+
+    to {
+
+        transform:
+
+            translateY(-50%);
+
+    }
+
+}
+    /* =====================================
+   GRADIENT ANIMATION
+===================================== */
+
+    @keyframes buddhaGradient {
+
+        0% {
+
+            background-position:
+
+                0% center;
+
+        }
+
+
+        100% {
+
+            background-position:
+
+                300% center;
+
+        }
+
+    }
+
+
+    /* =====================================
+   CONTENT ANIMATION
+===================================== */
+
+    @keyframes buddhaReveal {
+
+        from {
+
+            opacity:
+
+                0;
+
+            transform:
+
+                translateX(-70px);
+
+        }
+
+
+        to {
+
+            opacity:
+
+                1;
+
+            transform:
+
+                translateX(0);
+
+        }
+
+    }
+
+
+    /* =====================================
+   TABLET VIEW
+===================================== */
+
+    @media (max-width: 1000px) {
+
+        .buddha-section {
+
+            padding-right:
+
+                300px;
+
+        }
+
+
+        .buddha-photo-scroll {
+
+            width:
+
+                230px;
+
+            right:
+
+                20px;
+
+        }
+
+    }
+
+
+    /* =====================================
+   MOBILE VIEW
+===================================== */
+
+    @media (max-width: 700px) {
+
+        .buddha-section {
+
+            min-height:
+
+                auto;
+
+            display:
+
+                block;
+
+            padding:
+
+                90px 25px;
+
+            background-position:
+
+                65% center;
+
+        }
+
+
+        .buddha-content h1 {
+
+            font-size:
+
+                clamp(38px,
+
+                    12vw,
+
+                    60px);
+
+            letter-spacing:
+
+                1px;
+
+        }
+
+
+        .buddha-description {
+
+            font-size:
+
+                16px;
+
+        }
+
+
+        .buddha-buttons {
+
+            flex-direction:
+
+                column;
+
+        }
+
+
+        .buddha-btn {
+
+            text-align:
+
+                center;
+
+        }
+
+
+        /* MOBILE PHOTO SCROLL */
+
+        .buddha-photo-scroll {
+
+            position:
+
+                relative;
+
+            right:
+
+                auto;
+
+            top:
+
+                auto;
+
+            transform:
+
+                none;
+
+            width:
+
+                100%;
+
+            height:
+
+                350px;
+
+            margin-top:
+
+                50px;
+
+        }
+
+
+        .photo-track img {
+
+            height:
+
+                200px;
+
+        }
+
+    }
+</style>
+
+
+<body>
+
+
+    <!-- =====================================
+     GAUTAM BUDDHA SECTION
+===================================== -->
+
+    <section class="buddha-section">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="buddha-content">
+
+
+            <p class="buddha-tag">
+
+                ☸ THE PATH OF PEACE AND WISDOM
+
+            </p>
+
+
+            <h1>
+
+                GAUTAM
+
+                <span>
+
+                    BUDDHA
+
+                </span>
+
+            </h1>
+
+
+            <p class="buddha-year">
+
+                c. 563 BCE – c. 483 BCE
+
+            </p>
+
+
+            <p class="buddha-description">
+
+                Gautam Buddha was the founder of Buddhism
+                and a great spiritual teacher.
+
+                His teachings guide people toward peace,
+                wisdom, compassion, mindfulness and
+                freedom from suffering.
+
+            </p>
+
+
+            <div class="buddha-buttons">
+
+
+                <a href="http://www.esahity.com/uploads/5/0/1/2/501218/buddha_br_ambedkar.pdf" class="buddha-btn"
+                    target="_blank">
+
+                    The Buddha and His Dhamma
+
+                </a>
+
+
+                <a href="https://www.britannica.com/biography/Buddha-founder-of-Buddhism"
+                    class="buddha-btn buddha-btn-outline" target="_blank">
+
+                    Learn Dhamma
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =====================================
+         RIGHT SIDE AUTO SCROLL PHOTOS
+    ===================================== -->
+
+        <div class="buddha-photo-scroll">
+
+            
+                   
+            <div class="photo-track">
+
+   
+                <!-- PHOTO  -->
+
+                <a href="ashok.html">
+                
+                    <img src="img/Ashoka The Great  ☸️ Raja Bahavatu Dhammiko.jpg"
+                        alt="Buddha Statue">
+
+                </a>
+
+
+                <!-- PHOTO -->
+
+                <a href="https://www.britannica.com/topic/Kushan-dynasty">
+                    <img src="https://historified.in/wp-content/uploads/2023/04/Kanishka-emperor-blog-1200X900@roar.jpg"
+                        alt="Buddhist Temple">
+                </a>
+
+                <!-- PHOTO   -->
+
+                <a href="baba.html">
+
+                    <img src="https://i.pinimg.com/1200x/8c/08/98/8c08987253e7a20a5d53590bc56becae.jpg"
+                    alt="Buddha Meditation">
+                </a>
+
+
+                <!-- PHOTO  -->
+
+                <img src="https://i.pinimg.com/736x/57/0a/70/570a70b12d087833a790d90729627f02.jpg" alt="Buddha Temple">
+
+
+                <!-- =====================================
+                 SAME PHOTOS REPEATED
+                 FOR INFINITE SCROLL
+            ===================================== -->
+
+
+                <img src="https://i.pinimg.com/736x/7a/74/2a/7a742a279424fede2dc73feee3bcd8f9.jpg" alt="Buddha Statue">
+
+
+
+                <img src="https://i.pinimg.com/736x/a0/9d/e6/a09de6ad7ef4b1b96d4a2e30b68100c0.jpg"
+                    alt="Buddhist Temple">
+
+
+                <img src="https://i.pinimg.com/736x/88/fa/bf/88fabf46c36c3468059e15bd781c5566.jpg" alt="Buddha Temple">
+
+
+            </div>
+
+
+        </div>
+
+        
+
+
+    </section>
+
+
+</body>
+
+</html>

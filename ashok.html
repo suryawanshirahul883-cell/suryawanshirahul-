@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Emperor Ashoka The Great</title>
+
+<style>
+
+    /* =========================================
+       GOOGLE FONT
+    ========================================= */
+
+    @import url(
+        "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap"
+    );
+
+
+    /* =========================================
+       RESET
+    ========================================= */
+
+    * {
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    body {
+        font-family:
+            "Poppins",
+            sans-serif;
+
+        background:
+            #020713;
+    }
+
+
+    /* =========================================
+       ASHOKA HERO SECTION
+    ========================================= */
+
+    .ashoka-section {
+
+        position: relative;
+
+        min-height: 700px;
+
+        display: flex;
+
+        align-items: center;
+
+        padding:
+            90px 8%;
+
+        overflow: hidden;
+
+        isolation: isolate;
+
+        background:
+
+            linear-gradient(
+
+                90deg,
+
+                rgba(
+                    2,
+                    7,
+                    20,
+                    0.98
+                ) 0%,
+
+                rgba(
+                    3,
+                    10,
+                    27,
+                    0.91
+                ) 38%,
+
+                rgba(
+                    3,
+                    10,
+                    25,
+                    0.48
+                ) 68%,
+
+                rgba(
+                    2,
+                    7,
+                    18,
+                    0.25
+                ) 100%
+
+            ),
+
+            url(
+                "https://i.pinimg.com/1200x/0d/3f/42/0d3f42a776680037695b47637e6f6402.jpg"
+            );
+
+        background-size:
+            cover;
+
+        background-position:
+            center;
+
+        background-repeat:
+            no-repeat;
+    }
+
+
+    /* =========================================
+       DARK BOTTOM EFFECT
+    ========================================= */
+
+    .ashoka-section::before {
+
+        content: "";
+
+        position: absolute;
+
+        inset: 0;
+
+        z-index: -1;
+
+        background:
+
+            linear-gradient(
+
+                180deg,
+
+                transparent 50%,
+
+                rgba(
+                    2,
+                    6,
+                    18,
+                    0.92
+                ) 100%
+
+            );
+    }
+
+
+    /* =========================================
+       BLUE LIGHT EFFECT
+    ========================================= */
+
+    .ashoka-section::after {
+
+        content: "";
+
+        position: absolute;
+
+        width: 500px;
+
+        height: 500px;
+
+        left: -220px;
+
+        top: 50%;
+
+        transform:
+            translateY(-50%);
+
+        border-radius:
+            50%;
+
+        background:
+
+            rgba(
+                0,
+                229,
+                255,
+                0.12
+            );
+
+        filter:
+            blur(100px);
+
+        z-index: -1;
+
+        animation:
+
+            ashokaLight
+            6s
+            ease-in-out
+            infinite;
+    }
+
+
+    /* =========================================
+       CONTENT
+    ========================================= */
+
+    .ashoka-content {
+
+        position: relative;
+
+        width: 100%;
+
+        max-width:
+            760px;
+
+        z-index: 2;
+
+        animation:
+
+            ashokaReveal
+            1.2s
+            cubic-bezier(
+                0.16,
+                1,
+                0.3,
+                1
+            )
+            forwards;
+    }
+
+
+    /* =========================================
+       MAURYA EMPIRE TAG
+    ========================================= */
+
+    .ashoka-tag {
+
+        position: relative;
+
+        display:
+            inline-flex;
+
+        align-items:
+            center;
+
+        gap:
+            9px;
+
+        padding:
+            11px 23px;
+
+        margin-bottom:
+            24px;
+
+        overflow:
+            hidden;
+
+        border:
+
+            1px solid
+
+            rgba(
+                0,
+                229,
+                255,
+                0.65
+            );
+
+        border-radius:
+            50px;
+
+        color:
+            #a9f8ff;
+
+        background:
+
+            linear-gradient(
+
+                135deg,
+
+                rgba(
+                    0,
+                    229,
+                    255,
+                    0.18
+                ),
+
+                rgba(
+                    80,
+                    70,
+                    255,
+                    0.10
+                )
+
+            );
+
+        font-size:
+            13px;
+
+        font-weight:
+            800;
+
+        letter-spacing:
+            2.5px;
+
+        text-transform:
+            uppercase;
+
+        box-shadow:
+
+            0 0 20px
+
+            rgba(
+                0,
+                229,
+                255,
+                0.18
+            ),
+
+            inset
+            0 0 15px
+
+            rgba(
+                0,
+                229,
+                255,
+                0.06
+            );
+
+        backdrop-filter:
+            blur(10px);
+
+        animation:
+
+            tagGlow
+            3s
+            ease-in-out
+            infinite;
+    }
+
+
+    /* Moving shine */
+
+    .ashoka-tag::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: -50%;
+
+        left: -80%;
+
+        width: 35%;
+
+        height: 200%;
+
+        transform:
+            rotate(25deg);
+
+        background:
+
+            linear-gradient(
+
+                90deg,
+
+                transparent,
+
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.65
+                ),
+
+                transparent
+
+            );
+
+        animation:
+
+            tagShine
+            4s
+            ease-in-out
+            infinite;
+    }
+
+
+    /* =========================================
+       HEADING
+    ========================================= */
+
+    .ashoka-content h2 {
+
+        font-family:
+
+            "Orbitron",
+            sans-serif;
+
+        font-size:
+
+            clamp(
+                43px,
+                7vw,
+                92px
+            );
+
+        font-weight:
+            900;
+
+        line-height:
+            1.03;
+
+        letter-spacing:
+            3px;
+
+        color:
+            #ffffff;
+
+        text-shadow:
+
+            0 0 20px
+
+            rgba(
+                0,
+                229,
+                255,
+                0.18
+            );
+
+    }
+
+
+    /* THE GREAT */
+
+    .ashoka-content h2 span {
+
+        display:
+            block;
+
+        margin-top:
+            10px;
+
+        background:
+
+            linear-gradient(
+
+                90deg,
+
+                #00e5ff,
+
+                #ffffff,
+
+                #ffd166,
+
+                #7c4dff,
+
+                #00e5ff
+
+            );
+
+        background-size:
+            400% auto;
+
+        -webkit-background-clip:
+            text;
+
+        background-clip:
+            text;
+
+        -webkit-text-fill-color:
+            transparent;
+
+        animation:
+
+            ashokaGradient
+            6s
+            linear
+            infinite;
+    }
+
+
+    /* =========================================
+       YEAR
+    ========================================= */
+
+    .ashoka-year {
+
+        display:
+            inline-block;
+
+        margin:
+            24px 0 17px;
+
+        padding:
+            7px 16px;
+
+        border-left:
+
+            3px solid
+            #ffd166;
+
+        color:
+            #ffe09a;
+
+        background:
+
+            rgba(
+                255,
+                209,
+                102,
+                0.08
+            );
+
+        font-size:
+            19px;
+
+        font-weight:
+            700;
+
+        letter-spacing:
+            3px;
+
+    }
+
+
+    /* =========================================
+       DESCRIPTION
+    ========================================= */
+
+    .ashoka-description {
+
+        max-width:
+            650px;
+
+        color:
+
+            rgba(
+                255,
+                255,
+                255,
+                0.84
+            );
+
+        font-size:
+            17px;
+
+        line-height:
+            1.9;
+
+    }
+
+
+    /* =========================================
+       BUTTONS
+    ========================================= */
+
+    .ashoka-buttons {
+
+        display:
+            flex;
+
+        flex-wrap:
+            wrap;
+
+        gap:
+            16px;
+
+        margin-top:
+            36px;
+
+    }
+
+
+    .ashoka-btn {
+
+        position:
+            relative;
+
+        display:
+            inline-flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+
+        min-width:
+            190px;
+
+        padding:
+            15px 28px;
+
+        overflow:
+            hidden;
+
+        border:
+
+            2px solid
+            #00e5ff;
+
+        border-radius:
+            50px;
+
+        color:
+            #02101a;
+
+        background:
+            #00e5ff;
+
+        text-decoration:
+            none;
+
+        font-size:
+            15px;
+
+        font-weight:
+            800;
+
+        transition:
+
+            0.35s
+            ease;
+
+        box-shadow:
+
+            0 0 20px
+
+            rgba(
+                0,
+                229,
+                255,
+                0.25
+            );
+
+    }
+
+
+    .ashoka-btn:hover {
+
+        transform:
+
+            translateY(-6px)
+            scale(1.04);
+
+        color:
+            white;
+
+        background:
+
+            rgba(
+                0,
+                229,
+                255,
+                0.08
+            );
+
+        box-shadow:
+
+            0 10px 25px
+
+            rgba(
+                0,
+                0,
+                0,
+                0.30
+            ),
+
+            0 0 35px
+
+            rgba(
+                0,
+                229,
+                255,
+                0.65
+            );
+
+    }
+
+
+    /* =========================================
+       SECOND BUTTON
+    ========================================= */
+
+    .ashoka-btn-outline {
+
+        color:
+            white;
+
+        border-color:
+
+            rgba(
+                255,
+                255,
+                255,
+                0.55
+            );
+
+        background:
+
+            rgba(
+                255,
+                255,
+                255,
+                0.07
+            );
+
+    }
+
+
+    .ashoka-btn-outline:hover {
+
+        border-color:
+            #ffd166;
+
+        background:
+
+            rgba(
+                255,
+                209,
+                102,
+                0.18
+            );
+
+        box-shadow:
+
+            0 0 30px
+
+            rgba(
+                255,
+                209,
+                102,
+                0.38
+            );
+
+    }
+
+
+    /* =========================================
+       ANIMATIONS
+    ========================================= */
+
+    @keyframes ashokaGradient {
+
+        0% {
+
+            background-position:
+                0% center;
+
+        }
+
+        100% {
+
+            background-position:
+                400% center;
+
+        }
+
+    }
+
+
+    @keyframes ashokaReveal {
+
+        from {
+
+            opacity:
+                0;
+
+            transform:
+
+                translateX(
+                    -80px
+                );
+
+        }
+
+        to {
+
+            opacity:
+                1;
+
+            transform:
+
+                translateX(
+                    0
+                );
+
+        }
+
+    }
+
+
+    @keyframes ashokaLight {
+
+        0%,
+        100% {
+
+            opacity:
+                0.45;
+
+            transform:
+
+                translateY(-50%)
+                scale(0.9);
+
+        }
+
+        50% {
+
+            opacity:
+                0.9;
+
+            transform:
+
+                translateY(-50%)
+                scale(1.15);
+
+        }
+
+    }
+
+
+    @keyframes tagGlow {
+
+        0%,
+        100% {
+
+            box-shadow:
+
+                0 0 15px
+
+                rgba(
+                    0,
+                    229,
+                    255,
+                    0.18
+                );
+
+        }
+
+        50% {
+
+            box-shadow:
+
+                0 0 28px
+
+                rgba(
+                    0,
+                    229,
+                    255,
+                    0.48
+                );
+
+        }
+
+    }
+
+
+    @keyframes tagShine {
+
+        0% {
+
+            left:
+                -80%;
+
+        }
+
+        55% {
+
+            left:
+                130%;
+
+        }
+
+        100% {
+
+            left:
+                130%;
+
+        }
+
+    }
+
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media
+    (max-width: 700px) {
+
+        .ashoka-section {
+
+            min-height:
+                auto;
+
+            padding:
+
+                100px
+                25px
+                80px;
+
+            background-position:
+
+                65%
+                center;
+
+        }
+
+
+        .ashoka-content {
+
+            max-width:
+                100%;
+
+        }
+
+
+        .ashoka-content h2 {
+
+            font-size:
+
+                clamp(
+                    38px,
+                    12vw,
+                    62px
+                );
+
+            letter-spacing:
+                1px;
+
+        }
+
+
+        .ashoka-tag {
+
+            padding:
+
+                9px
+                16px;
+
+            font-size:
+                10px;
+
+            letter-spacing:
+                1.4px;
+
+        }
+
+
+        .ashoka-year {
+
+            font-size:
+                15px;
+
+            letter-spacing:
+                1.5px;
+
+        }
+
+
+        .ashoka-description {
+
+            font-size:
+                15px;
+
+            line-height:
+                1.8;
+
+        }
+
+
+        .ashoka-buttons {
+
+            flex-direction:
+                column;
+
+        }
+
+
+        .ashoka-btn {
+
+            width:
+                100%;
+
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<section class="ashoka-section">
+
+```
+<div class="ashoka-content">
+
+
+    <p class="ashoka-tag">
+
+        🦁 MAURYA EMPIRE
+
+    </p>
+
+
+    <h2>
+
+        EMPEROR ASHOKA
+
+        <span>
+
+            THE GREAT
+
+        </span>
+
+    </h2>
+
+
+    <p class="ashoka-year">
+
+        304 BCE – 232 BCE
+
+    </p>
+
+
+    <p class="ashoka-description">
+
+        Emperor Ashoka was one of the
+        greatest rulers of ancient India.
+
+        After the Kalinga War,
+        he chose the path of peace,
+        compassion, justice and Dhamma.
+
+    </p>
+
+
+    <div class="ashoka-buttons">
+
+
+        <a
+            href="#ashoka-history"
+            class="ashoka-btn"
+        >
+
+            Explore History →
+
+        </a>
+
+
+        <a
+            href="#dhamma"
+            class="ashoka-btn ashoka-btn-outline"
+        >
+
+            Learn Dhamma
+
+        </a>
+
+
+    </div>
+
+
+</div>
+```
+
+</section>
+
+</body>
+
+</html>

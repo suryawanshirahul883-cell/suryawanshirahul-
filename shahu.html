@@ -1,0 +1,941 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rajarshi Shahu Maharaj</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<style>
+
+/* =====================================
+   BASIC SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    background:
+        #020817;
+}
+
+
+/* =====================================
+   RAJARSHI SHAHU MAHARAJ SECTION
+===================================== */
+
+.shahu-section {
+
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        5% 0% 9% 3%;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(20, 8, 3, 0.807),
+
+            rgba(45, 22, 5, 0.78),
+
+            rgba(20, 8, 3, 0.233)
+
+        ),
+
+        url(
+            "https://i.pinimg.com/736x/cc/99/93/cc9993921a6de791d1a3549494bc4fc9.jpg"
+        );
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    background-repeat:
+        no-repeat;
+
+    background-attachment:
+        scroll;
+}
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.shahu-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width:
+        750px;
+
+    animation:
+
+        shahuReveal
+
+        1.2s
+
+        ease
+
+        forwards;
+}
+
+
+/* =========================================
+   SHAHU TAG – ROYAL LUXURY DESIGN
+========================================= */
+
+.shahu-tag {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 30px;
+    margin-bottom: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(255, 205, 80, 0.75);
+
+    border-radius: 50px;
+
+    color: #ffe8a3;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 215, 100, 0.18),
+            rgba(115, 65, 10, 0.25),
+            rgba(255, 190, 50, 0.12)
+        );
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 8px
+        rgba(255, 210, 80, 0.50);
+
+    box-shadow:
+
+        0 0 12px
+        rgba(255, 190, 50, 0.22),
+
+        0 0 30px
+        rgba(255, 150, 0, 0.13),
+
+        inset 0 0 15px
+        rgba(255, 220, 120, 0.10);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+    transition:
+
+        transform 0.4s ease,
+
+        box-shadow 0.4s ease,
+
+        border-color 0.4s ease,
+
+        color 0.4s ease;
+
+    animation:
+
+        royalGlow 3s
+        ease-in-out
+        infinite;
+}
+
+
+/* =========================================
+   MOVING GOLDEN SHINE
+========================================= */
+
+.shahu-tag::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -50%;
+
+    left: -80%;
+
+    width: 45%;
+
+    height: 200%;
+
+    transform:
+
+        rotate(25deg);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(
+                255,
+                255,
+                255,
+                0.45
+            ),
+
+            transparent
+        );
+
+    animation:
+
+        royalShine 4s
+        ease-in-out
+        infinite;
+}
+
+
+/* =========================================
+   GOLDEN BOTTOM LINE
+========================================= */
+
+.shahu-tag::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 20%;
+
+    width: 60%;
+
+    height: 1px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            #ffd166,
+
+            transparent
+        );
+
+    box-shadow:
+
+        0 0 10px
+        #ffd166;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.shahu-tag:hover {
+
+    transform:
+
+        translateY(-5px)
+        scale(1.06);
+
+    color:
+
+        #ffffff;
+
+    border-color:
+
+        #ffe18a;
+
+    box-shadow:
+
+        0 8px 20px
+        rgba(0, 0, 0, 0.30),
+
+        0 0 20px
+        rgba(255, 200, 60, 0.60),
+
+        0 0 50px
+        rgba(255, 150, 0, 0.28),
+
+        inset 0 0 20px
+        rgba(255, 220, 100, 0.15);
+}
+
+
+/* =========================================
+   ROYAL GLOW ANIMATION
+========================================= */
+
+@keyframes royalGlow {
+
+    0%,
+    100% {
+
+        border-color:
+
+            rgba(
+                255,
+                190,
+                60,
+                0.50
+            );
+
+        box-shadow:
+
+            0 0 12px
+            rgba(
+                255,
+                190,
+                60,
+                0.18
+            ),
+
+            inset 0 0 10px
+            rgba(
+                255,
+                220,
+                100,
+                0.06
+            );
+    }
+
+
+    50% {
+
+        border-color:
+
+            rgba(
+                255,
+                225,
+                130,
+                0.90
+            );
+
+        box-shadow:
+
+            0 0 25px
+            rgba(
+                255,
+                190,
+                60,
+                0.42
+            ),
+
+            0 0 45px
+            rgba(
+                255,
+                140,
+                0,
+                0.16
+            ),
+
+            inset 0 0 15px
+            rgba(
+                255,
+                220,
+                100,
+                0.12
+            );
+    }
+}
+
+
+/* =========================================
+   SHINE MOVEMENT
+========================================= */
+
+@keyframes royalShine {
+
+    0% {
+
+        left:
+            -80%;
+    }
+
+
+    55% {
+
+        left:
+            130%;
+    }
+
+
+    100% {
+
+        left:
+            130%;
+    }
+}
+
+
+/* =========================================
+   MOBILE DESIGN
+========================================= */
+
+@media
+(max-width: 600px) {
+
+    .shahu-tag {
+
+        padding:
+
+            10px 18px;
+
+        font-size:
+
+            11px;
+
+        letter-spacing:
+
+            1.2px;
+
+        margin-bottom:
+
+            17px;
+    }
+}
+
+/* =====================================
+   MAIN HEADING
+===================================== */
+
+.shahu-content h1 {
+
+    margin:
+        0;
+
+    font-family:
+
+        "Orbitron",
+
+        sans-serif;
+
+    font-size:
+
+        clamp(
+            42px,
+            7vw,
+            88px
+        );
+
+    line-height:
+        1.1;
+
+    letter-spacing:
+        3px;
+
+    color:
+        white;
+
+    text-shadow:
+
+        0 0 30px
+
+        rgba(
+            255,
+            190,
+            60,
+            0.35
+        );
+}
+
+
+/* =====================================
+   SHAHU MAHARAJ GRADIENT
+===================================== */
+
+.shahu-content h1 span {
+
+    display:
+        block;
+
+    margin-top:
+        10px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #ffd166,
+
+            #ffffff,
+
+            #ff8c42,
+
+            #ffd166
+
+        );
+
+    background-size:
+        300% auto;
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    -webkit-text-fill-color:
+        transparent;
+
+    animation:
+
+        shahuGradient
+
+        5s
+
+        linear
+
+        infinite;
+}
+
+
+/* =====================================
+   BIRTH AND DEATH
+===================================== */
+
+.shahu-year {
+
+    margin:
+        20px 0;
+
+    color:
+        #ffd166;
+
+    font-size:
+        21px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        2px;
+}
+
+
+/* =====================================
+   DESCRIPTION
+===================================== */
+
+.shahu-description {
+
+    max-width:
+        650px;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            0.90
+        );
+
+    font-size:
+        18px;
+
+    line-height:
+        1.8;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.shahu-buttons {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+    margin-top:
+        35px;
+}
+
+
+.shahu-btn {
+
+    padding:
+        15px 28px;
+
+    border:
+
+        2px solid
+
+        #ffd166;
+
+    border-radius:
+        50px;
+
+    color:
+        #251700;
+
+    background:
+        #ffd166;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        800;
+
+    transition:
+        0.35s;
+
+    box-shadow:
+
+        0 0 25px
+
+        rgba(
+            255,
+            190,
+            60,
+            0.30
+        );
+}
+
+
+/* =====================================
+   BUTTON HOVER
+===================================== */
+
+.shahu-btn:hover {
+
+    transform:
+
+        translateY(
+            -5px
+        );
+
+    color:
+        white;
+
+    background:
+        transparent;
+
+    box-shadow:
+
+        0 0 35px
+
+        rgba(
+            255,
+            190,
+            60,
+            0.75
+        );
+}
+
+
+/* =====================================
+   SECOND BUTTON
+===================================== */
+
+.shahu-btn-outline {
+
+    color:
+        white;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    border-color:
+
+        rgba(
+            255,
+            255,
+            255,
+            0.65
+        );
+}
+
+
+.shahu-btn-outline:hover {
+
+    color:
+        #251700;
+
+    background:
+        #ff8c42;
+
+    border-color:
+        #ff8c42;
+}
+
+
+/* =====================================
+   GRADIENT ANIMATION
+===================================== */
+
+@keyframes shahuGradient {
+
+    0% {
+
+        background-position:
+
+            0%
+
+            center;
+
+    }
+
+
+    100% {
+
+        background-position:
+
+            300%
+
+            center;
+
+    }
+
+}
+
+
+/* =====================================
+   CONTENT ANIMATION
+===================================== */
+
+@keyframes shahuReveal {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+
+            translateX(
+                -70px
+            );
+
+    }
+
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+
+            translateX(
+                0
+            );
+
+    }
+
+}
+
+
+/* =====================================
+   MOBILE VIEW
+===================================== */
+
+@media (
+    max-width: 700px
+) {
+
+    .shahu-section {
+
+        min-height:
+            auto;
+
+        padding:
+
+            90px
+
+            25px;
+
+        background-position:
+
+            65%
+
+            center;
+
+    }
+
+
+    .shahu-content h1 {
+
+        font-size:
+
+            clamp(
+                38px,
+                12vw,
+                60px
+            );
+
+        letter-spacing:
+            1px;
+
+    }
+
+
+    .shahu-description {
+
+        font-size:
+            16px;
+
+    }
+
+
+    .shahu-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .shahu-btn {
+
+        text-align:
+            center;
+
+    }
+
+}
+
+</style>
+
+
+<body>
+
+
+<!-- =====================================
+     RAJARSHI SHAHU MAHARAJ
+===================================== -->
+
+<section class="shahu-section">
+
+
+    <div class="shahu-content">
+
+
+        <p class="shahu-tag">
+
+            👑 SOCIAL REFORMER AND VISIONARY KING
+
+        </p>
+
+
+        <h1>
+
+            RAJARSHI
+
+            <span>
+
+                SHAHU MAHARAJ
+
+            </span>
+
+        </h1>
+
+
+        <p class="shahu-year">
+
+            26 June 1874 – 6 May 1922
+
+        </p>
+
+
+        <p class="shahu-description">
+
+            Rajarshi Shahu Maharaj was a great
+            social reformer and the ruler of
+            Kolhapur. He worked for education,
+            equality, social justice and the
+            upliftment of disadvantaged communities.
+            His reforms created new opportunities
+            for many people.
+
+        </p>
+
+   </div>
+
+
+
+</section>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    ```
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Dr. Babasaheb Ambedkar
+    </title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    ```
+
+</head>
+
+<style>
+    /* =========================================
+   GLOBAL RESET
+========================================= */
+
+    * {
+
+        margin:
+            0;
+
+        padding:
+            0;
+
+        box-sizing:
+            border-box;
+
+    }
+
+
+    html {
+
+        scroll-behavior:
+            smooth;
+
+    }
+
+
+    body {
+
+        font-family:
+
+            "Poppins",
+
+            sans-serif;
+
+        background:
+
+            #020817;
+
+        overflow-x:
+            hidden;
+
+    }
+
+
+    /* =========================================
+   DR. BABASAHEB AMBEDKAR SECTION
+========================================= */
+
+    .ambedkar-section {
+
+        position:
+            relative;
+
+        min-height:
+            720px;
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        padding:
+
+            100px 8%;
+
+        overflow:
+            hidden;
+
+        isolation:
+            isolate;
+
+        background:
+
+            linear-gradient(90deg,
+
+                rgba(1,
+                    6,
+                    22,
+                    0.98) 0%,
+
+                rgba(2,
+                    10,
+                    32,
+                    0.93) 40%,
+
+                rgba(3,
+                    12,
+                    36,
+                    0.62) 67%,
+
+                rgba(2,
+                    8,
+                    24,
+                    0.20) 100%),
+
+            url("https://i.pinimg.com/1200x/57/ea/35/57ea35c9c2948943f9d164de30503ef3.jpg"
+
+            );
+
+        background-size:
+
+            cover;
+
+        background-position:
+
+            center;
+
+        background-repeat:
+
+            no-repeat;
+
+    }
+
+
+    /* =========================================
+   ANIMATED BLUE AURA
+========================================= */
+
+    .ambedkar-section::before {
+
+        content:
+
+            "";
+
+        position:
+
+            absolute;
+
+        width:
+
+            650px;
+
+        height:
+
+            650px;
+
+        top:
+
+            -280px;
+
+        left:
+
+            -250px;
+
+        border-radius:
+
+            50%;
+
+        background:
+
+            radial-gradient(circle,
+
+                rgba(0,
+                    170,
+                    255,
+                    0.25),
+
+                rgba(36,
+                    87,
+                    197,
+                    0.10),
+
+                transparent);
+
+        filter:
+
+            blur(20px);
+
+        animation:
+
+            blueAura 8s ease-in-out infinite;
+
+        pointer-events:
+
+            none;
+
+    }
+
+
+    /* =========================================
+   ROTATING ASHOKA CHAKRA
+========================================= */
+
+    .ambedkar-section::after {
+
+        content:
+
+            "☸";
+
+        position:
+
+            absolute;
+
+        right:
+
+            -100px;
+
+        top:
+
+            50%;
+
+        z-index:
+
+            -1;
+
+        transform:
+
+            translateY(-50%);
+
+        color:
+
+            rgba(0,
+                170,
+                255,
+                0.08);
+
+        font-size:
+
+            520px;
+
+        line-height:
+
+            1;
+
+        text-shadow:
+
+            0 0 60px rgba(0,
+                170,
+                255,
+                0.15);
+
+        animation:
+
+            chakraRotate 45s linear infinite;
+
+        pointer-events:
+
+            none;
+
+    }
+
+
+    /* =========================================
+   FLOATING PARTICLES
+========================================= */
+
+    .ambedkar-particles {
+
+        position:
+
+            absolute;
+
+        inset:
+
+            0;
+
+        z-index:
+
+            1;
+
+        overflow:
+
+            hidden;
+
+        pointer-events:
+
+            none;
+
+    }
+
+
+    .ambedkar-particles span {
+
+        position:
+
+            absolute;
+
+        display:
+
+            block;
+
+        width:
+
+            5px;
+
+        height:
+
+            5px;
+
+        border-radius:
+
+            50%;
+
+        background:
+
+            #62d9ff;
+
+        box-shadow:
+
+            0 0 12px #00bfff;
+
+        opacity:
+
+            0;
+
+        animation:
+
+            particleFloat 9s linear infinite;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(1) {
+
+        left:
+
+            10%;
+
+        animation-delay:
+
+            0s;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(2) {
+
+        left:
+
+            25%;
+
+        animation-delay:
+
+            2s;
+
+        animation-duration:
+
+            11s;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(3) {
+
+        left:
+
+            43%;
+
+        animation-delay:
+
+            4s;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(4) {
+
+        left:
+
+            62%;
+
+        animation-delay:
+
+            1s;
+
+        animation-duration:
+
+            12s;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(5) {
+
+        left:
+
+            80%;
+
+        animation-delay:
+
+            5s;
+
+    }
+
+
+    .ambedkar-particles span:nth-child(6) {
+
+        left:
+
+            92%;
+
+        animation-delay:
+
+            3s;
+
+        animation-duration:
+
+            10s;
+
+    }
+
+
+   /* =========================================
+   DR. BABASAHEB AMBEDKAR TAG
+========================================= */
+
+.ambedkar-tag {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    margin-bottom: 24px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(0, 174, 239, 0.65);
+
+    border-radius: 50px;
+
+    color:
+        #b9efff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 119, 190, 0.22),
+            rgba(0, 35, 90, 0.45),
+            rgba(0, 174, 239, 0.10)
+        );
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.8px;
+
+    text-align:
+        center;
+
+    text-transform:
+        uppercase;
+
+    text-shadow:
+        0 0 10px
+        rgba(0, 174, 239, 0.35);
+
+    box-shadow:
+        0 0 18px
+        rgba(0, 174, 239, 0.20),
+
+        0 0 40px
+        rgba(0, 80, 180, 0.12),
+
+        inset 0 0 15px
+        rgba(0, 174, 239, 0.06);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+    animation:
+        ambedkarGlow
+        3s
+        ease-in-out
+        infinite;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* =========================================
+   MOVING SHINE EFFECT
+========================================= */
+
+.ambedkar-tag::before {
+    content: "";
+
+    position: absolute;
+
+    top: -60%;
+
+    left: -80%;
+
+    width: 35%;
+
+    height: 220%;
+
+    transform:
+        rotate(25deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.55),
+            transparent
+        );
+
+    animation:
+        ambedkarShine
+        4.5s
+        ease-in-out
+        infinite;
+
+    pointer-events:
+        none;
+}
+
+
+/* =========================================
+   CONSTITUTION BUTTON
+========================================= */
+
+.ambedkar-tag a {
+    position: relative;
+
+    z-index: 2;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        8px 15px;
+
+    border:
+        1px solid
+        rgba(255, 215, 100, 0.75);
+
+    border-radius:
+        30px;
+
+    color:
+        #fff1b8;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 190, 60, 0.25),
+            rgba(180, 105, 0, 0.20)
+        );
+
+    text-decoration:
+        none;
+
+    font-size:
+        11px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        1.5px;
+
+    box-shadow:
+        0 0 12px
+        rgba(255, 190, 60, 0.20);
+
+    transition:
+        0.35s ease;
+}
+
+
+/* =========================================
+   TAG HOVER
+========================================= */
+
+.ambedkar-tag:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #00d9ff;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.25),
+
+        0 0 28px
+        rgba(0, 174, 239, 0.48),
+
+        0 0 55px
+        rgba(0, 80, 200, 0.20);
+}
+
+
+/* =========================================
+   LINK HOVER
+========================================= */
+
+.ambedkar-tag a:hover {
+    transform:
+        translateY(-2px)
+        scale(1.06);
+
+    color:
+        #061526;
+
+    background:
+        #ffd166;
+
+    border-color:
+        #fff0a6;
+
+    box-shadow:
+        0 0 20px
+        rgba(255, 209, 102, 0.65);
+}
+
+
+/* =========================================
+   GLOW ANIMATION
+========================================= */
+
+@keyframes ambedkarGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 15px
+            rgba(0, 174, 239, 0.18),
+
+            inset 0 0 10px
+            rgba(0, 174, 239, 0.05);
+    }
+
+    50% {
+        box-shadow:
+            0 0 28px
+            rgba(0, 174, 239, 0.45),
+
+            0 0 50px
+            rgba(0, 80, 200, 0.15),
+
+            inset 0 0 18px
+            rgba(0, 174, 239, 0.10);
+    }
+}
+
+
+/* =========================================
+   SHINE ANIMATION
+========================================= */
+
+@keyframes ambedkarShine {
+
+    0% {
+        left:
+            -80%;
+    }
+
+    55% {
+        left:
+            130%;
+    }
+
+    100% {
+        left:
+            130%;
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .ambedkar-tag {
+        padding:
+            10px 14px;
+
+        gap:
+            8px;
+
+        font-size:
+            10px;
+
+        line-height:
+            1.6;
+
+        letter-spacing:
+            1px;
+    }
+
+
+    .ambedkar-tag a {
+        padding:
+            7px 12px;
+
+        font-size:
+            9px;
+
+        letter-spacing:
+            1px;
+    }
+}
+
+    /* =========================================
+   PREMIUM CONSTITUTION TAG
+========================================= */
+
+    .ambedkar-tag {
+
+        position:
+
+            relative;
+
+        display:
+
+            inline-flex;
+
+        align-items:
+
+            center;
+
+        padding:
+
+            11px 25px;
+
+        margin-bottom:
+
+            26px;
+
+        overflow:
+
+            hidden;
+
+        border:
+
+            1px solid rgba(91,
+                210,
+                255,
+                0.70);
+
+        border-radius:
+
+            50px;
+
+        color:
+
+            #bdeeff;
+
+        background:
+
+            linear-gradient(135deg,
+
+                rgba(0,
+                    174,
+                    255,
+                    0.18),
+
+                rgba(20,
+                    70,
+                    150,
+                    0.18));
+
+        font-size:
+
+            12px;
+
+        font-weight:
+
+            800;
+
+        letter-spacing:
+
+            2.2px;
+
+        text-transform:
+
+            uppercase;
+
+        text-shadow:
+
+            0 0 10px rgba(0,
+                191,
+                255,
+                0.60);
+
+        box-shadow:
+
+            0 0 20px rgba(0,
+                174,
+                255,
+                0.20),
+
+            inset 0 0 15px rgba(100,
+                220,
+                255,
+                0.08);
+
+        backdrop-filter:
+
+            blur(10px);
+
+        -webkit-backdrop-filter:
+
+            blur(10px);
+
+        animation:
+
+            tagPulse 3s ease-in-out infinite;
+
+    }
+
+
+    /* TAG SHINE */
+
+    .ambedkar-tag::before {
+
+        content:
+
+            "";
+
+        position:
+
+            absolute;
+
+        top:
+
+            -60%;
+
+        left:
+
+            -80%;
+
+        width:
+
+            35%;
+
+        height:
+
+            220%;
+
+        transform:
+
+            rotate(25deg);
+
+        background:
+
+            linear-gradient(90deg,
+
+                transparent,
+
+                rgba(255,
+                    255,
+                    255,
+                    0.65),
+
+                transparent);
+
+        animation:
+
+            tagShine 4.5s ease-in-out infinite;
+
+    }
+
+
+    /* =========================================
+   MAIN HEADING
+========================================= */
+
+    .ambedkar-content h1 {
+
+        font-family:
+
+            "Cinzel",
+
+            serif;
+
+        font-size:
+
+            clamp(44px,
+
+                7vw,
+
+                92px);
+
+        line-height:
+
+            1.03;
+
+        letter-spacing:
+
+            3px;
+
+        color:
+
+            #ffffff;
+
+        text-shadow:
+
+            0 5px 28px rgba(0,
+                0,
+                0,
+                0.85);
+
+    }
+
+
+    /* =========================================
+   AMBEDKAR GRADIENT NAME
+========================================= */
+
+    .ambedkar-content h1 span {
+
+        display:
+
+            block;
+
+        margin-top:
+
+            10px;
+
+        background:
+
+            linear-gradient(90deg,
+
+                #0077c8,
+
+                #00bfff,
+
+                #ffffff,
+
+                #4d7cff,
+
+                #00bfff);
+
+        background-size:
+
+            300% auto;
+
+        -webkit-background-clip:
+
+            text;
+
+        background-clip:
+
+            text;
+
+        -webkit-text-fill-color:
+
+            transparent;
+
+        animation:
+
+            ambedkarGradient 6s linear infinite;
+
+        filter:
+
+            drop-shadow(0 0 14px rgba(0,
+                    191,
+                    255,
+                    0.35));
+
+    }
+
+
+    /* =========================================
+   DATE
+========================================= */
+
+    .ambedkar-year {
+
+        margin:
+
+            25px 0 18px;
+
+        color:
+
+            #ffd166;
+
+        font-size:
+
+            20px;
+
+        font-weight:
+
+            700;
+
+        letter-spacing:
+
+            3px;
+
+        text-shadow:
+
+            0 0 12px rgba(255,
+                209,
+                102,
+                0.30);
+
+    }
+
+
+    /* =========================================
+   DESCRIPTION
+========================================= */
+
+    .ambedkar-description {
+
+        max-width:
+
+            680px;
+
+        color:
+
+            rgba(255,
+                255,
+                255,
+                0.88);
+
+        font-size:
+
+            17px;
+
+        line-height:
+
+            1.9;
+
+        text-shadow:
+
+            0 2px 8px rgba(0,
+                0,
+                0,
+                0.70);
+
+    }
+
+
+    /* =========================================
+   BUTTON AREA
+========================================= */
+
+    .ambedkar-buttons {
+
+        display:
+
+            flex;
+
+        flex-wrap:
+
+            wrap;
+
+        gap:
+
+            17px;
+
+        margin-top:
+
+            40px;
+
+    }
+
+
+    /* =========================================
+   PREMIUM BUTTON
+========================================= */
+
+    .ambedkar-btn {
+
+        position:
+
+            relative;
+
+        display:
+
+            inline-flex;
+
+        align-items:
+
+            center;
+
+        justify-content:
+
+            center;
+
+        min-width:
+
+            195px;
+
+        padding:
+
+            15px 29px;
+
+        overflow:
+
+            hidden;
+
+        border:
+
+            1px solid #00bfff;
+
+        border-radius:
+
+            50px;
+
+        color:
+
+            #02111d;
+
+        background:
+
+            linear-gradient(135deg,
+
+                #d5f7ff,
+
+                #00bfff,
+
+                #1876d2);
+
+        text-decoration:
+
+            none;
+
+        font-weight:
+
+            800;
+
+        letter-spacing:
+
+            0.4px;
+
+        box-shadow:
+
+            0 8px 25px rgba(0,
+                191,
+                255,
+                0.28);
+
+        transition:
+
+            transform 0.35s ease,
+
+            box-shadow 0.35s ease;
+
+    }
+
+
+    /* BUTTON SHINE */
+
+    .ambedkar-btn::before {
+
+        content:
+
+            "";
+
+        position:
+
+            absolute;
+
+        top:
+
+            0;
+
+        left:
+
+            -120%;
+
+        width:
+
+            65%;
+
+        height:
+
+            100%;
+
+        transform:
+
+            skewX(-25deg);
+
+        background:
+
+            linear-gradient(90deg,
+
+                transparent,
+
+                rgba(255,
+                    255,
+                    255,
+                    0.70),
+
+                transparent);
+
+        transition:
+
+            left 0.6s ease;
+
+    }
+
+
+    .ambedkar-btn:hover::before {
+
+        left:
+
+            150%;
+
+    }
+
+
+    .ambedkar-btn:hover {
+
+        transform:
+
+            translateY(-7px) scale(1.03);
+
+        box-shadow:
+
+            0 14px 32px rgba(0,
+                0,
+                0,
+                0.35),
+
+            0 0 35px rgba(0,
+                191,
+                255,
+                0.60);
+
+    }
+
+
+    /* =========================================
+   OUTLINE BUTTON
+========================================= */
+
+    .ambedkar-btn-outline {
+
+        color:
+
+            #d9f7ff;
+
+        background:
+
+            rgba(255,
+                255,
+                255,
+                0.08);
+
+        border-color:
+
+            rgba(150,
+                225,
+                255,
+                0.65);
+
+        backdrop-filter:
+
+            blur(10px);
+
+    }
+
+
+    .ambedkar-btn-outline:hover {
+
+        color:
+
+            #ffffff;
+
+        background:
+
+            linear-gradient(135deg,
+
+                #003f87,
+
+                #1478d4);
+
+    }
+
+
+    /* =========================================
+   BOTTOM BLUE LIGHT
+========================================= */
+
+    .ambedkar-bottom-line {
+
+        position:
+
+            absolute;
+
+        bottom:
+
+            0;
+
+        left:
+
+            0;
+
+        z-index:
+
+            8;
+
+        width:
+
+            100%;
+
+        height:
+
+            2px;
+
+        background:
+
+            linear-gradient(90deg,
+
+                transparent,
+
+                #00bfff,
+
+                #ffffff,
+
+                #00bfff,
+
+                transparent);
+
+        box-shadow:
+
+            0 0 22px rgba(0,
+                191,
+                255,
+                0.70);
+
+    }
+
+
+    /* =========================================
+   KEYFRAMES
+========================================= */
+
+    @keyframes ambedkarGradient {
+
+        0% {
+
+            background-position:
+
+                0% center;
+
+        }
+
+
+        100% {
+
+            background-position:
+
+                300% center;
+
+        }
+
+    }
+
+
+    @keyframes ambedkarReveal {
+
+        from {
+
+            opacity:
+
+                0;
+
+            transform:
+
+                translateX(-85px);
+
+        }
+
+
+        to {
+
+            opacity:
+
+                1;
+
+            transform:
+
+                translateX(0);
+
+        }
+
+    }
+
+
+    @keyframes blueAura {
+
+        0%,
+
+        100% {
+
+            transform:
+
+                scale(1);
+
+            opacity:
+
+                0.55;
+
+        }
+
+
+        50% {
+
+            transform:
+
+                scale(1.18);
+
+            opacity:
+
+                1;
+
+        }
+
+    }
+
+
+    @keyframes chakraRotate {
+
+        from {
+
+            transform:
+
+                translateY(-50%) rotate(0deg);
+
+        }
+
+
+        to {
+
+            transform:
+
+                translateY(-50%) rotate(360deg);
+
+        }
+
+    }
+
+
+    @keyframes particleFloat {
+
+        0% {
+
+            bottom:
+
+                -20px;
+
+            opacity:
+
+                0;
+
+            transform:
+
+                translateX(0);
+
+        }
+
+
+        15% {
+
+            opacity:
+
+                0.80;
+
+        }
+
+
+        85% {
+
+            opacity:
+
+                0.30;
+
+        }
+
+
+        100% {
+
+            bottom:
+
+                110%;
+
+            opacity:
+
+                0;
+
+            transform:
+
+                translateX(100px);
+
+        }
+
+    }
+
+
+    @keyframes tagShine {
+
+        0% {
+
+            left:
+
+                -80%;
+
+        }
+
+
+        55% {
+
+            left:
+
+                130%;
+
+        }
+
+
+        100% {
+
+            left:
+
+                130%;
+
+        }
+
+    }
+
+
+    @keyframes tagPulse {
+
+        0%,
+
+        100% {
+
+            box-shadow:
+
+                0 0 15px rgba(0,
+                    191,
+                    255,
+                    0.18);
+
+        }
+
+
+        50% {
+
+            box-shadow:
+
+                0 0 28px rgba(0,
+                    191,
+                    255,
+                    0.45);
+
+        }
+
+    }
+
+
+    /* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+    @media (max-width: 700px) {
+
+        .ambedkar-section {
+
+            min-height:
+
+                auto;
+
+            padding:
+
+                105px 23px 85px;
+
+            background-position:
+
+                65% center;
+
+        }
+
+
+        .ambedkar-section::after {
+
+            font-size:
+
+                290px;
+
+            right:
+
+                -90px;
+
+            opacity:
+
+                0.70;
+
+        }
+
+
+        .ambedkar-content h1 {
+
+            font-size:
+
+                clamp(39px,
+
+                    12vw,
+
+                    64px);
+
+            letter-spacing:
+
+                1px;
+
+        }
+
+
+        .ambedkar-tag {
+
+            padding:
+
+                9px 16px;
+
+            font-size:
+
+                9px;
+
+            letter-spacing:
+
+                1px;
+
+        }
+
+
+        .ambedkar-year {
+
+            font-size:
+
+                15px;
+
+            letter-spacing:
+
+                1.5px;
+
+        }
+
+
+        .ambedkar-description {
+
+            font-size:
+
+                15px;
+
+            line-height:
+
+                1.75;
+
+        }
+
+
+        .ambedkar-buttons {
+
+            flex-direction:
+
+                column;
+
+        }
+
+
+        .ambedkar-btn {
+
+            width:
+
+                100%;
+
+            min-width:
+
+                auto;
+
+        }
+
+    }
+
+
+    /* =========================================
+   REDUCED MOTION
+========================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+        * {
+
+            animation:
+
+                none !important;
+
+            transition:
+
+                none !important;
+
+            scroll-behavior:
+
+                auto !important;
+
+        }
+
+    }
+</style>
+
+<body>
+
+    <section class="ambedkar-section">
+
+        ```
+        <!-- Floating Particles -->
+
+        <div class="ambedkar-particles">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+
+        <!-- Main Content -->
+
+        <div class="ambedkar-content">
+
+
+            <p class="ambedkar-tag">
+                ARCHITECT OF THE INDIAN CONSTITUTION
+                <a href="https://dn790000.ca.archive.org/0/items/hilltop7420
+                    _gmail_1/1%20%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A4%BE%E0%A4%9A%E0%A5%87%20%E0%A4%
+                    B8%E0%A4%82%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BE%E0%A4%A8.pdf"> 📘</a>
+
+               
+            </p>
+
+
+            <h1>
+
+                DR. BABASAHEB
+
+                <span>
+
+                    AMBEDKAR
+
+                </span>
+
+            </h1>
+
+
+            <p class="ambedkar-year">
+
+                14 April 1891 – 6 December 1956
+
+            </p>
+
+
+            <p class="ambedkar-description">
+
+                Dr. Babasaheb Ambedkar was a great
+                jurist, economist, social reformer and
+                the chief architect of the Constitution
+                of India. He dedicated his life to
+                equality, education, justice and human
+                rights.
+
+            </p>
+
+
+            <div class="ambedkar-buttons">
+
+
+                <a href="#ambedkar-history" class="ambedkar-btn">
+
+                    HISTORY →
+
+                </a>
+
+
+                
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Bottom Glow -->
+
+        <div class="ambedkar-bottom-line"> </div>
+        ```
+
+    </section>
+
+</body>
+
+</html>

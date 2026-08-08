@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    ```
+    <meta name="description"
+        content="Study of Code - Learn HTML, CSS, JavaScript, Python and modern programming skills.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Python, Coding, Programming">
+    <meta name="author" content="Study of Code">
+
+    <title>Study of Code | Learn Programming</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/study.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- PAGE LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-box">
+            <span>&lt;/&gt;</span>
+            <p>Loading Study of Code...</p>
+        </div>
+    </div>
+
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>&lt;/&gt;</span>
+                Study of Code
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+
+            <!-- NAVIGATION -->
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="home.html" class="active">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#features">
+                        Benefits
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#abap"
+                        target="_blank" rel="noopener noreferrer">
+                        Books
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- DARK MODE -->
+            <button class="theme-btn" id="themeBtn" aria-label="Change theme">
+                🌙
+            </button>
+
+        </nav>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <p class="small-title">
+                        🚀 WELCOME TO STUDY OF CODE
+                    </p>
+
+                    <h1>
+                        Learn Coding<br>
+
+                        <span>
+                            Build Your Future
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Learn HTML, CSS, JavaScript, Python and
+                        modern programming skills through trusted
+                        online learning platforms.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#courses" class="hero-btn">
+                            Explore Courses
+                            <span>↓</span>
+                        </a>
+
+                        <a href="https://youtu.be/Ebe9NFgQnnU?si=xnDfSKk4CU6fuEah" class="hero-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            Why Coding?
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </header>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <p class="section-tag">
+            FIND YOUR COURSE
+        </p>
+
+        <h2>
+            Start Learning Today
+        </h2>
+
+        <p>
+            Search a programming language or
+            learning platform.
+        </p>
+
+
+        <div class="search-box">
+
+            <span>X</span>
+
+            <input type="text" id="searchInput" placeholder="  Search courses...   " autocomplete="on">
+
+            <button id="clearSearch" aria-label="Clear search">
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- COURSE FILTER -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active-filter" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web Development
+            </button>
+
+            <button class="filter-btn" data-filter="programming">
+                Programming
+            </button>
+
+            <button class="filter-btn" data-filter="course">
+                Courses
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- COURSES -->
+    <main>
+
+        <section class="courses" id="courses">
+
+            <!-- GEEKSFORGEEKS -->
+            <article class="card" data-category="programming web">
+
+                <div class="card-image">
+
+                    <img src="https://i.pinimg.com/736x/68/ae/be/68aebe036126b45098ae268a82882e3f.jpg"
+                        alt="GeeksforGeeks programming platform" loading="lazy">
+
+                    <span class="card-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="content">
+
+                    <span class="tag">
+                        FREE LEARNING
+                    </span>
+
+                    <h2>
+                        GeeksforGeeks
+                    </h2>
+
+                    <p>
+
+                        Learn programming, data structures,
+                        algorithms, web development and
+                        computer science concepts.
+
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            💻 Programming
+                        </span>
+
+                        <span>
+                            📚 Practice
+                        </span>
+
+                    </div>
+
+
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer"
+                        class="learn-btn">
+
+                        Start Learning
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- W3SCHOOLS -->
+            <article class="card" data-category="web programming">
+
+                <div class="card-image">
+
+                    <img src="https://i.pinimg.com/736x/74/c7/de/74c7de2972bc839005a6df65eae6dc3e.jpg"
+                        alt="W3Schools web development platform" loading="lazy">
+
+                    <span class="card-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="content">
+
+                    <span class="tag">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h2>
+                        W3Schools
+                    </h2>
+
+                    <p>
+
+                        Learn HTML, CSS, JavaScript,
+                        Python and web development
+                        with examples and practice.
+
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            🌐 Web Development
+                        </span>
+
+                        <span>
+                            ⚡ Try It Yourself
+                        </span>
+
+                    </div>
+
+
+                    <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer" class="learn-btn">
+
+                        Start Learning
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- TUTEDUDE -->
+            <article class="card" data-category="course programming">
+
+                <div class="card-image">
+
+                    <img src="https://i.pinimg.com/736x/bc/e1/c6/bce1c65f5e267aeaad023a8065637ccf.jpg"
+                        alt="Tutedude online courses" loading="lazy">
+
+                    <span class="card-number">
+                        03
+                    </span>
+
+                </div>
+
+
+                <div class="content">
+
+                    <span class="tag">
+                        ONLINE COURSE
+                    </span>
+
+                    <h2>
+                        Tutedude Courses
+                    </h2>
+
+                    <p>
+
+                        Learn Web Development, Python,
+                        Java, Data Science, UI/UX,
+                        DevOps and more.
+
+                    </p>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            🎓 Structured Courses
+                        </span>
+
+                        <span>
+                            🚀 Career Skills
+                        </span>
+
+                    </div>
+
+
+                    <a href="https://tutedude.com/" target="_blank" rel="noopener noreferrer" class="learn-btn">
+
+                        View Courses
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FEATURES -->
+    <section class="about" id="features">
+
+        <div class="section-heading">
+
+            <p class="section-tag">
+                WHY STUDY CODING?
+            </p>
+
+            <h2>
+                Turn Your Ideas Into Reality
+            </h2>
+
+            <p>
+
+                Coding helps you build projects,
+                solve problems and create better
+                career opportunities.
+
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <article class="feature">
+
+                <div class="feature-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Learn Skills
+                </h3>
+
+                <p>
+
+                    Learn modern programming,
+                    web development and
+                    problem-solving skills.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature">
+
+                <div class="feature-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Build Projects
+                </h3>
+
+                <p>
+
+                    Create websites and useful
+                    projects for your portfolio.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature">
+
+                <div class="feature-icon">
+                    💼
+                </div>
+
+                <h3>
+                    Prepare for Jobs
+                </h3>
+
+                <p>
+
+                    Improve your technical skills
+                    and prepare for IT careers.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    <span>&lt;/&gt;</span>
+                    Study of Code
+                </h2>
+
+                <p>
+
+                    Learn programming, practice
+                    your skills and build your future.
+
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Learning
+                </h3>
+
+                <a href="#courses">
+                    Web Development
+                </a>
+
+                <a href="#courses">
+                    Programming
+                </a>
+
+                <a href="#courses">
+                    Online Courses
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Study of Code.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Learn • Practice • Build • Grow
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* =========================
+           PAGE LOADER
+        ========================= */
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                document
+                    .getElementById("loader")
+                    .classList
+                    .add("hide-loader");
+
+            }
+        );
+
+
+        /* =========================
+           MOBILE MENU
+        ========================= */
+
+        const menuBtn =
+            document.getElementById("menuBtn");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuBtn.addEventListener(
+            "click",
+            function () {
+
+                navLinks
+                    .classList
+                    .toggle("show-menu");
+
+
+                if (
+                    navLinks
+                        .classList
+                        .contains("show-menu")
+                ) {
+
+                    menuBtn.innerHTML =
+                        "✕";
+
+                }
+
+                else {
+
+                    menuBtn.innerHTML =
+                        "☰";
+
+                }
+
+            }
+        );
+
+
+        /* CLOSE MENU */
+
+        document
+            .querySelectorAll(
+                ".nav-links a"
+            )
+            .forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            navLinks
+                                .classList
+                                .remove("show-menu");
+
+                            menuBtn.innerHTML =
+                                "☰";
+
+                        }
+                    );
+
+                }
+            );
+
+
+        /* =========================
+           DARK MODE
+        ========================= */
+
+        const themeBtn =
+            document.getElementById("themeBtn");
+
+
+        if (
+            localStorage
+                .getItem("studyTheme")
+            === "dark"
+        ) {
+
+            document.body
+                .classList
+                .add("dark-mode");
+
+            themeBtn.innerHTML =
+                "☀️";
+
+        }
+
+
+        themeBtn.addEventListener(
+            "click",
+            function () {
+
+                document.body
+                    .classList
+                    .toggle("dark-mode");
+
+
+                if (
+                    document.body
+                        .classList
+                        .contains("dark-mode")
+                ) {
+
+                    themeBtn.innerHTML =
+                        "☀️";
+
+                    localStorage
+                        .setItem(
+                            "studyTheme",
+                            "dark"
+                        );
+
+                }
+
+                else {
+
+                    themeBtn.innerHTML =
+                        "🌙";
+
+                    localStorage
+                        .setItem(
+                            "studyTheme",
+                            "light"
+                        );
+
+                }
+
+            }
+        );
+
+
+        /* =========================
+           LIVE SEARCH
+        ========================= */
+
+        const searchInput =
+            document.getElementById(
+                "searchInput"
+            );
+
+        const cards =
+            document.querySelectorAll(
+                ".card"
+            );
+
+        const noResults =
+            document.getElementById(
+                "noResults"
+            );
+
+        const clearSearch =
+            document.getElementById(
+                "clearSearch"
+            );
+
+
+        function searchCourses() {
+
+            const value =
+                searchInput
+                    .value
+                    .toLowerCase()
+                    .trim();
+
+
+            let visibleCards = 0;
+
+
+            cards.forEach(
+                function (card) {
+
+                    const text =
+                        card
+                            .innerText
+                            .toLowerCase();
+
+
+                    if (
+                        text.includes(value)
+                    ) {
+
+                        card.style.display =
+                            "block";
+
+                        visibleCards++;
+
+                    }
+
+                    else {
+
+                        card.style.display =
+                            "none";
+
+                    }
+
+                }
+            );
+
+
+            if (
+                visibleCards === 0
+            ) {
+
+                noResults
+                    .style
+                    .display =
+                    "block";
+
+            }
+
+            else {
+
+                noResults
+                    .style
+                    .display =
+                    "none";
+
+            }
+
+        }
+
+
+        searchInput.addEventListener(
+            "input",
+            searchCourses
+        );
+
+
+        clearSearch.addEventListener(
+            "click",
+            function () {
+
+                searchInput.value =
+                    "";
+
+                searchCourses();
+
+                searchInput.focus();
+
+            }
+        );
+
+
+        /* =========================
+           COURSE FILTER
+        ========================= */
+
+        const filterButtons =
+            document.querySelectorAll(
+                ".filter-btn"
+            );
+
+
+        filterButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        filterButtons
+                            .forEach(
+                                function (btn) {
+
+                                    btn
+                                        .classList
+                                        .remove(
+                                            "active-filter"
+                                        );
+
+                                }
+                            );
+
+
+                        button
+                            .classList
+                            .add(
+                                "active-filter"
+                            );
+
+
+                        const filter =
+                            button
+                                .dataset
+                                .filter;
+
+
+                        let count = 0;
+
+
+                        cards.forEach(
+                            function (card) {
+
+                                const category =
+                                    card
+                                        .dataset
+                                        .category;
+
+
+                                if (
+                                    filter === "all"
+                                    ||
+                                    category
+                                        .includes(filter)
+                                ) {
+
+                                    card
+                                        .style
+                                        .display =
+                                        "block";
+
+                                    count++;
+
+                                }
+
+                                else {
+
+                                    card
+                                        .style
+                                        .display =
+                                        "none";
+
+                                }
+
+                            }
+                        );
+
+
+                        noResults
+                            .style
+                            .display =
+                            count === 0
+                                ?
+                                "block"
+                                :
+                                "none";
+
+
+                        searchInput.value =
+                            "";
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =========================
+           SCROLL PROGRESS
+        ========================= */
+
+        const scrollProgress =
+            document.getElementById(
+                "scrollProgress"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                const scrollTop =
+                    document
+                        .documentElement
+                        .scrollTop;
+
+
+                const scrollHeight =
+                    document
+                        .documentElement
+                        .scrollHeight
+                    -
+                    document
+                        .documentElement
+                        .clientHeight;
+
+
+                const progress =
+                    (
+                        scrollTop
+                        /
+                        scrollHeight
+                    )
+                    *
+                    100;
+
+
+                scrollProgress
+                    .style
+                    .width =
+                    progress
+                    +
+                    "%";
+
+            }
+        );
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        const topBtn =
+            document.getElementById(
+                "topBtn"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                if (
+                    window.scrollY > 500
+                ) {
+
+                    topBtn
+                        .classList
+                        .add("show-top");
+
+                }
+
+                else {
+
+                    topBtn
+                        .classList
+                        .remove("show-top");
+
+                }
+
+            }
+        );
+
+
+        topBtn.addEventListener(
+            "click",
+            function () {
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior:
+                        "smooth"
+
+                });
+
+            }
+        );
+
+
+        /* =========================
+           ACTIVE NAVIGATION
+        ========================= */
+
+        const sections =
+            document.querySelectorAll(
+                "header, section"
+            );
+
+        const navItems =
+            document.querySelectorAll(
+                ".nav-links a"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                let current =
+                    "";
+
+
+                sections.forEach(
+                    function (section) {
+
+                        const top =
+                            section
+                                .offsetTop
+                            -
+                            150;
+
+
+                        if (
+                            window.scrollY
+                            >=
+                            top
+                        ) {
+
+                            current =
+                                section.id;
+
+                        }
+
+                    }
+                );
+
+
+                navItems.forEach(
+                    function (link) {
+
+                        link
+                            .classList
+                            .remove(
+                                "active"
+                            );
+
+
+                        if (
+                            link
+                                .getAttribute("href")
+                            ===
+                            "#"
+                            +
+                            current
+                        ) {
+
+                            link
+                                .classList
+                                .add(
+                                    "active"
+                                );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =========================
+           TOAST MESSAGE
+        ========================= */
+
+        const toast =
+            document.getElementById(
+                "toast"
+            );
+
+
+        document
+            .querySelectorAll(
+                ".learn-btn"
+            )
+            .forEach(
+                function (button) {
+
+                    button.addEventListener(
+                        "click",
+                        function () {
+
+                            toast
+                                .classList
+                                .add(
+                                    "show-toast"
+                                );
+
+
+                            setTimeout(
+                                function () {
+
+                                    toast
+                                        .classList
+                                        .remove(
+                                            "show-toast"
+                                        );
+
+                                },
+                                2500
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    </script>
+    
+    <style>
+        /* ===================================
+   STUDY OF CODE - COMPLETE CSS
+=================================== */
+
+/* GOOGLE FONT */
+@import url("https://i.pinimg.com/736x/35/57/e7/3557e768802070c983a5fe399daa1a39.jpg");
+
+/* ===================================
+   RESET
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ===================================
+   PAGE LOADER
+=================================== */
+
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #07152e;
+    transition: 0.6s;
+}
+
+.loader-box {
+    text-align: center;
+    color: white;
+}
+
+.loader-box span {
+    display: inline-flex;
+
+    width: 80px;
+    height: 80px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    font-size: 30px;
+
+    animation: loaderAnimation 1s infinite;
+}
+
+.loader-box p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.hide-loader {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes loaderAnimation {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ===================================
+   SCROLL PROGRESS
+=================================== */
+
+.scroll-progress {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 5px;
+
+    z-index: 9999;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed,
+        #ec4899
+    );
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+.header {
+    min-height: 100vh;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(59, 130, 246, 0.4),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(124, 58, 237, 0.4),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #07152e,
+            #0c2350,
+            #111827
+        );
+}
+
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+    padding: 22px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #dbeafe;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: white;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+    height: 2px;
+
+    left: 0;
+    bottom: -8px;
+
+    background: #60a5fa;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
+/* ===================================
+   THEME BUTTON
+=================================== */
+
+.theme-btn {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.2);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: rotate(20deg);
+
+    background:
+        rgba(255, 255, 255, 0.2);
+}
+
+
+/* ===================================
+   MOBILE MENU BUTTON
+=================================== */
+
+.menu-btn {
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    font-size: 25px;
+}
+
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero {
+    min-height: 82vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 30px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 760px;
+
+    animation:
+        heroAnimation
+        1s ease;
+}
+
+.small-title {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
+    border-radius: 50px;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    color: #93c5fd;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin-top: 25px;
+
+    font-size:
+        clamp(
+            45px,
+            7vw,
+            85px
+        );
+
+    line-height: 1.08;
+
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa,
+            #f0abfc
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 15px 35px
+        rgba(37, 99, 235, 0.25);
+
+    transition: 0.3s;
+}
+
+.hero-btn:last-child {
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.2);
+}
+
+.hero-btn:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 20px 40px
+        rgba(37, 99, 235, 0.4);
+}
+
+@keyframes heroAnimation {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ===================================
+   SEARCH SECTION
+=================================== */
+
+.search-section {
+    padding: 100px 25px 60px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.section-tag {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.search-section h2,
+.section-heading h2 {
+    margin-top: 12px;
+
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            50px
+        );
+
+    color: #14213d;
+}
+
+.search-section > p:not(.section-tag) {
+    margin-top: 15px;
+
+    color: #64748b;
+}
+
+
+/* ===================================
+   SEARCH BOX
+=================================== */
+
+.search-box {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 35px auto 25px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px;
+
+    border:
+        1px solid
+        #dbe3ef;
+
+    border-radius: 15px;
+
+    background: white;
+
+    box-shadow:
+        0 12px 35px
+        rgba(15, 23, 42, 0.08);
+
+    transition: 0.3s;
+}
+
+.search-box:focus-within {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 15px 40px
+        rgba(37, 99, 235, 0.15);
+}
+
+.search-box > span {
+    padding: 0 12px;
+
+    color: #2563eb;
+
+    font-weight: 800;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 14px 5px;
+
+    font-size: 15px;
+
+    color: #172033;
+}
+
+.search-box button {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+
+    transform: scale(1.05);
+}
+
+
+/* ===================================
+   FILTER BUTTONS
+=================================== */
+
+.filter-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 11px 20px;
+
+    border:
+        1px solid
+        #dbe3ef;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #475569;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.active-filter {
+    color: white;
+
+    border-color: #2563eb;
+
+    background: #2563eb;
+}
+
+
+/* ===================================
+   COURSE CARDS
+=================================== */
+
+.courses {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 70px 25px 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 28px;
+}
+
+.card {
+    overflow: hidden;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(15, 23, 42, 0.07);
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform:
+        translateY(-12px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(15, 23, 42, 0.15);
+}
+
+.card-image {
+    height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-number {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background:
+        rgba(15, 23, 42, 0.8);
+
+    font-weight: 700;
+}
+
+.content {
+    padding: 28px;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 50px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.content h2 {
+    margin-top: 18px;
+
+    color: #14213d;
+
+    font-size: 25px;
+}
+
+.content p {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.course-info {
+    margin-top: 20px;
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.course-info span {
+    padding: 8px 10px;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    font-size: 12px;
+}
+
+.learn-btn {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(37, 99, 235, 0.3);
+}
+
+
+/* ===================================
+   FEATURES
+=================================== */
+
+.about {
+    padding: 100px 25px;
+
+    background: #eef4ff;
+}
+
+.section-heading {
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.section-heading > p:not(.section-tag) {
+    margin-top: 18px;
+
+    color: #64748b;
+
+    line-height: 1.8;
+}
+
+.features {
+    max-width: 1150px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 25px;
+}
+
+.feature {
+    padding: 40px 28px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 35px
+        rgba(15, 23, 42, 0.07);
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform:
+        translateY(-10px);
+}
+
+.feature-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #ede9fe
+        );
+
+    font-size: 32px;
+}
+
+.feature h3 {
+    margin-top: 22px;
+
+    color: #14213d;
+
+    font-size: 22px;
+}
+
+.feature p {
+    margin-top: 14px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    padding: 70px 25px 25px;
+
+    color: #cbd5e1;
+
+    background: #07152e;
+}
+
+.footer-content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-content h2 {
+    color: white;
+
+    font-size: 25px;
+}
+
+.footer-content h2 span {
+    color: #60a5fa;
+}
+
+.footer-content p {
+    max-width: 450px;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.footer-content h3 {
+    color: white;
+
+    margin-bottom: 18px;
+}
+
+.footer-content a {
+    display: block;
+
+    width: max-content;
+
+    margin-top: 12px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #60a5fa;
+
+    transform:
+        translateX(5px);
+}
+
+.footer-bottom {
+    max-width: 1150px;
+
+    margin: 55px auto 0;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+.dark-mode {
+    background: #0b1220;
+
+    color: #e2e8f0;
+}
+
+.dark-mode .search-section {
+    background: #111827;
+}
+
+.dark-mode .search-section h2,
+.dark-mode .section-heading h2,
+.dark-mode .content h2,
+.dark-mode .feature h3 {
+    color: white;
+}
+
+.dark-mode .search-section > p:not(.section-tag),
+.dark-mode .section-heading > p:not(.section-tag),
+.dark-mode .content p,
+.dark-mode .feature p {
+    color: #94a3b8;
+}
+
+.dark-mode .courses {
+    background: #0b1220;
+}
+
+.dark-mode .card,
+.dark-mode .feature,
+.dark-mode .search-box {
+    background: #172033;
+
+    border-color: #263244;
+}
+
+.dark-mode .search-box input {
+    color: white;
+
+    background: transparent;
+}
+
+.dark-mode .course-info span {
+    color: #cbd5e1;
+
+    background: #263244;
+}
+
+.dark-mode .about {
+    background: #111827;
+}
+
+.dark-mode .tag {
+    background: #1e3a5f;
+
+    color: #93c5fd;
+}
+
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media screen and (max-width: 950px) {
+
+    .courses {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+    .features {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+    .feature:last-child {
+        grid-column:
+            span 2;
+    }
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        padding:
+            18px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu-btn {
+        display: block;
+
+        margin-left: auto;
+
+        margin-right: 12px;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 75px;
+        left: 20px;
+        right: 20px;
+
+        padding: 25px;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+
+        border-radius: 18px;
+
+        background: #10264f;
+
+        box-shadow:
+            0 20px 40px
+            rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.show-menu {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white;
+    }
+
+    .theme-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero {
+        min-height: 85vh;
+
+        padding:
+            40px 22px 80px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+
+    .search-section {
+        padding:
+            70px 18px 40px;
+    }
+
+    .courses {
+        padding:
+            45px 18px 70px;
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .features {
+        grid-template-columns:
+            1fr;
+    }
+
+    .feature:last-child {
+        grid-column: auto;
+    }
+
+    .about {
+        padding:
+            70px 18px;
+    }
+
+    .footer-content {
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+
+/* ===================================
+   SMALL MOBILE
+=================================== */
+
+@media screen and (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .small-title {
+        font-size: 10px;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+}
+    </style>
+
+</body>
+
+</html>
