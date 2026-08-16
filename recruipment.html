@@ -21,7 +21,34 @@
         </div>
 
     </header>
-    
+
+<!-- 🔎 PREMIUM SEARCH -->
+
+<div class="portal-search">
+
+    <div class="search-title">
+        <span>🔎</span>
+        <h2>Find Your Recruitment</h2>
+    </div>
+
+    <p>Search government jobs, banks, exams and recruitment portals</p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Railway, MPSC, SSC, RBI, SBI..."
+            autocomplete="off">
+
+        <button type="button" onclick="searchCards()">
+            🔍 Search
+        </button>
+
+    </div>
+
+</div>
+
     <!-- scroll Updates -->
     <div class="ticker">
         <div class="ticker-content">
@@ -47,7 +74,7 @@
             <span>|</span>
 
         </div>
-    </div> 
+    </div>
     <br>
 
     <!-- CONTAINER -->
@@ -62,18 +89,15 @@
                 alt="Railway Recruitment Board">
 
             <div class="content">
-
-                <h2>RAILWAY RECRUITMENT BOARD</h2>
+                <h2>🚆 RAILWAY RECRUITMENT BOARD</h2>
 
                 <p>
                     Ministry of Railways, Government of India.
-                    Apply online for NTPC, Group D, ALP and many more posts.
+                    Apply online for NTPC, Group D, ALP and other railway recruitment opportunities.
                 </p>
 
                 <a class="btn" href="https://www.rrbapply.gov.in/#/auth/landing" target="_blank">
-
                     Apply Now
-
                 </a>
 
             </div>
@@ -484,7 +508,7 @@
             </div>
 
         </div>
-   <!-- indian overseas bank  -->
+        <!-- indian overseas bank  -->
         <div class="card">
 
             <img src="https://i.pinimg.com/736x/ea/15/41/ea1541c42df4414e44225a27f1b2d05f.jpg"
@@ -515,11 +539,21 @@
 
     <footer>
 
-        <h2>Government Career Portal</h2>
+    <h2>Government Career Portal</h2>
 
-        <p>
-            Designed By Rahul Suryawanshi
-        </p>
+   
+
+    <p class="copyright">
+        © <span id="currentYear"></span>
+        Government Career Portal. All Rights Reserved.
+    </p>
+
+    
+
+<button id="backToTop">
+    ↑
+</button>
+
 
     </footer>
     <!-- java script fill -->
