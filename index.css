@@ -1,4 +1,4 @@
-@import url('https://i.pinimg.com/1200x/ef/d3/55/efd355cb7c5f6c898904b0e702a32014.jpg');
+@import url('https://i.pinimg.com/1200x/27/9e/11/279e11e61e8a100841db98a81621ddcf.jpg');
 
 * {
     margin: 0;
@@ -111,7 +111,7 @@ body {
             rgba(4,15,40,.95),
             rgba(20,65,150,.90)
         ),
-        url("https://images.unsplash.com/photo-1523240795612-9a054b0db644")
+        url("https://i.pinimg.com/1200x/27/9e/11/279e11e61e8a100841db98a81621ddcf.jpg")
         center/cover;
 }
 
