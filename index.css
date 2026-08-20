@@ -960,148 +960,270 @@ footer {
 
 
 .footer-links a,
-/* ===== SOCIAL SECTION ===== */
+/* ==============================
+   SOCIAL MEDIA FOOTER
+================================ */
 
 .footer-social {
-    margin-left: auto;
-    text-align: right;
-    padding-right: 25px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .footer-social h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
     color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 18px;
-    letter-spacing: 1px;
+    font-weight: 600;
 }
 
-/* Icons Row */
-.footer-social {
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* Individual Social Icon */
+.social-icon {
+    width: 90px;
+    min-height: 90px;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    transition: all 0.3s ease;
 }
 
-.footer-social h3 {
-    align-self: flex-end;
+
+/* Social Images */
+.social-icon img {
+    width: 38px;
+    height: 38px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 7px;
+
+    transition: transform 0.3s ease;
 }
 
-/* Social Icon */
+
+/* Social Name */
+.social-icon span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* Hover Effect */
+.social-icon:hover {
+    transform: translateY(-7px);
+
+    background: rgba(255, 255, 255, 0.16);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Image Zoom */
+.social-icon:hover img {
+    transform: scale(1.15);
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    .footer-social h3 {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 75px;
+        min-height: 75px;
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .social-icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icon span {
+        font-size: 11px;
+    }
+}
+/* Logo */
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* EACH SOCIAL ITEM */
 .social-icon {
-    position: relative;
-
-    width: 50px;
-    height: 50px;
-
-    margin: 6px 0;
+    width: 85px;
+    min-height: 85px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    border-radius: 14px;
-
-    background: linear-gradient(
-        145deg,
-        rgba(255,255,255,0.12),
-        rgba(255,255,255,0.03)
-    );
-
-    border: 1px solid rgba(255,255,255,0.12);
+    position: relative;
 
     text-decoration: none;
+    color: white;
 
-    backdrop-filter: blur(10px);
+    padding: 10px 5px;
 
-    transition: 
-        transform 0.35s ease,
-        background 0.35s ease,
-        box-shadow 0.35s ease;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition: 0.3s ease;
+
+    box-sizing: border-box;
 }
 
-/* Logo */
+
+/* LOGO */
 .social-icon img {
-    width: 27px;
-    height: 27px;
+    width: 38px;
+    height: 38px;
 
     object-fit: cover;
     border-radius: 50%;
 
-    transition: 0.35s ease;
+    transition: 0.3s ease;
 }
 
-/* Hover */
-.social-icon:hover {
-    transform: translateX(-8px) scale(1.08);
 
-    background: linear-gradient(
-        135deg,
-        #2563eb,
-        #7c3aed
-    );
-
-    border-color: transparent;
-
-    box-shadow:
-        0 8px 25px rgba(37,99,235,0.35),
-        0 0 20px rgba(124,58,237,0.25);
-}
-
-.social-icon:hover img {
-    transform: rotate(8deg) scale(1.18);
-}
-
-/* Name Tooltip */
+/* TEXT */
 .social-icon span {
     position: absolute;
 
-    right: 65px;
-    top: 50%;
+    top: 100%;
+    left: 50%;
 
-    transform: translateY(-50%) translateX(10px);
+    transform: translateX(-50%);
 
-    padding: 8px 14px;
+    margin-top: 8px;
 
-    border-radius: 8px;
-
-    background: #111827;
-    color: #ffffff;
+    white-space: nowrap;
 
     font-size: 13px;
     font-weight: 600;
 
-    white-space: nowrap;
+    background: #111;
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
 
     opacity: 0;
     visibility: hidden;
 
-    transition: 0.3s ease;
+    pointer-events: none;
 
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.25s ease;
+
+    z-index: 999;
 }
 
-/* Arrow */
-.social-icon span::after {
+
+/* SMALL ARROW */
+.social-icon span::before {
     content: "";
 
     position: absolute;
 
-    right: -5px;
-    top: 50%;
+    top: -5px;
+    left: 50%;
 
-    transform: translateY(-50%);
+    transform: translateX(-50%);
 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #111827;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #111;
 }
 
-/* Show Name */
+
+/* HOVER */
+.social-icon:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* LOGO ZOOM */
+.social-icon:hover img {
+    transform: scale(1.12);
+}
+
+
+/* SHOW ONLY THAT SOCIAL NAME */
 .social-icon:hover span {
     opacity: 1;
     visibility: visible;
+}
 
-    transform: translateY(-50%) translateX(0);
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 70px;
+        min-height: 70px;
+    }
+
+    .social-icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icon span {
+        font-size: 11px;
+    }
 }
 
 /* =========================
